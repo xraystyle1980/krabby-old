@@ -12,7 +12,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import avatar from '../images/avatar.png';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -131,39 +131,23 @@ const Index = () => (
     <Parallax pages={5}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
-        <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
-<SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
-          // <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
-          // <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
-          // <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
+          <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
+
+
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" className={hidden} width={16} fill={colors['blue-dark']} left="90%" top="10%" />
-          <SVG icon="triangle" width={12} stroke={colors.white} left="90%" top="50%" />
-          <SVG icon="circle" width={16} fill={colors['grey-darker']} left="70%" top="90%" />
-          <SVG icon="triangle" width={16} stroke={colors['grey-darkest']} left="30%" top="65%" />
-          <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="75%" top="10%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+          <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
+
+
         </UpDownWide>
-        <SVG icon="circle" className={hidden} width={24} fill={colors['grey-darker']} left="5%" top="70%" />
-        <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="50%" top="60%" />
-        <SVG icon="upDown" width={8} fill={colors['grey-darkest']} left="95%" top="90%" />
-        <SVG icon="upDown" className={hidden} width={24} fill={colors['grey-darker']} left="40%" top="80%" />
-        <SVG icon="triangle" width={8} stroke={colors['grey-darker']} left="25%" top="5%" />
-        <SVG icon="circle" width={64} fill={colors.green} left="95%" top="5%" />
-        <SVG icon="box" className={hidden} width={64} fill={colors.purple} left="5%" top="90%" />
-        <SVG icon="box" width={6} fill={colors['grey-darkest']} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors['grey-darkest']} left="40%" top="30%" />
-        <SVG icon="hexa" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
-        <SVG icon="hexa" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
+
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm John Doe.
+            Howdy, <br /> I'm Matt Trice.
           </BigTitle>
-          <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+          <Subtitle>Online website portfolio for UX app design full time system for design.</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -177,94 +161,74 @@ const Index = () => (
           <Title>Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Freiheit"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              title="One"
+              link="#"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              Description desc Description desc.
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
+              title="Two"
+              link="#"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+              Description desc Description desc.
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+              title="Three"
+              link="#"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-              Recreation of a Tomb Raider Wallpaper (Fan Art)
+              Description desc Description desc.
             </ProjectCard>
             <ProjectCard
-              title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
+              title="Four"
+              link="#"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
-              A fantasy image manipulation relocating the habitat of wild animals.
+              Description desc Description desc.
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
       </Content>
       <Divider speed={0.1} offset={1} factor={2}>
-        // <UpDown>
-        //   <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
-        //   <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
-        //   <SVG icon="triangle" width={8} stroke={colors.orange} left="25%" top="5%" />
-        //   <SVG icon="circle" className={hidden} width={24} fill={colors.white} left="17%" top="60%" />
-        // </UpDown>
-        // <UpDownWide>
-        //   <SVG icon="arrowUp" className={hidden} width={16} fill={colors.green} left="20%" top="90%" />
-        //   <SVG icon="triangle" width={12} stroke={colors.white} left="90%" top="30%" />
-        //   <SVG icon="circle" width={16} fill={colors.yellow} left="70%" top="90%" />
-        //   <SVG icon="triangle" className={hidden} width={16} stroke={colors.teal} left="18%" top="75%" />
-        //   <SVG icon="circle" width={6} fill={colors.white} left="75%" top="10%" />
-        //   <SVG icon="upDown" className={hidden} width={8} fill={colors.green} left="45%" top="10%" />
-        // </UpDownWide>
-        // <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-        // <SVG icon="circle" width={12} fill={colors.pink} left="80%" top="60%" />
-        // <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-        // <SVG icon="box" width={12} fill={colors.yellow} left="29%" top="26%" />
-        // <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
-        // <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
+        <UpDown>
+          <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
+
+
+        </UpDown>
+        <UpDownWide>
+          <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
+
+
+        </UpDownWide>
+        stuff here
       </Divider>
-      // <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
-      // <Divider speed={0.1} offset={3}>
-      //   <UpDown>
-      //     <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
-      //     <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
-      //     <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
-      //     <SVG icon="upDown" className={hidden} width={24} fill={colors.orange} left="80%" top="80%" />
-      //   </UpDown>
-      //   <UpDownWide>
-      //     <SVG icon="arrowUp" className={hidden} width={16} fill={colors.purple} left="5%" top="80%" />
-      //     <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
-      //     <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
-      //     <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
-      //   </UpDownWide>
-      //   <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-      //   <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
-      //   <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-      //   <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
-      //   <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
-      // </Divider>
+      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
+      <Divider speed={0.1} offset={3}>
+        <UpDown>
+          <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
+
+
+        </UpDown>
+        <UpDownWide>
+          <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
+
+
+        </UpDownWide>
+        stuff here
+      </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
           <Title>About</Title>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
+              The old bill ey up duck a right corker ey up taking the mick challenge you to a duel black pudding gobsmacked.
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+            Pommy ipsum full English breakast not some sort of dosshouse air one's dirty linen teacakes, darling see a man about a dog lug hole pie-eyed, chin up brilliant any road, best be off shortbread. Nigh marmite blummin' cottage pie I could reet fancy a what a mug, superb dignified who brought loaf. The old bill ey up duck a right corker ey up taking the mick challenge you to a duel black pudding gobsmacked, in a pickle stop arsing around wibbly-wobbly timey-wimey stuff yorkshire pudding up at the crack of dawn. Getting on my wick blighty it's me peepers nosh man and his whippet a total jessie, jolly good proper whizz therewith, Geordie got a lot of brass black cab therewith.
           </AboutDesc>
         </Inner>
       </Content>
@@ -289,29 +253,27 @@ const Index = () => (
           <Title>Get in touch</Title>
           <ContactText>
             Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            <a href="https://dribbble.com/trice">Dribbble</a> &{' '}
+            <a href="https://www.instagram.com/trice.design/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
+          &copy; 2018 trice.design{' '}
           <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
         <UpDown>
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
-          <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
+          <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
+
+
         </UpDown>
         <UpDownWide>
-          <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
-          <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+          <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
+
+
         </UpDownWide>
-        <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
-        <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
-        <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
+        stuff here
       </Divider>
     </Parallax>
   </React.Fragment>
