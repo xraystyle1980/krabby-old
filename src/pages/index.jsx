@@ -5,6 +5,12 @@ import { Parallax, ParallaxLayer } from 'react-spring';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
 
+
+import '../assets/css/krabby.css';
+
+
+
+
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
 import ProjectCard from '../components/ProjectCard';
@@ -25,7 +31,6 @@ const Divider = styled(ParallaxLayer)`
 `;
 
 const DividerMiddle = styled(Divider)`
-  clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
 `;
 
 const Content = styled(ParallaxLayer)`
@@ -129,7 +134,7 @@ const Index = () => (
   <React.Fragment>
     <SEO />
 
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="bubble" width={3} left="80%" top="30%" />
@@ -157,18 +162,37 @@ const Index = () => (
           <Subtitle>Online website portfolio for UX app design full time system for design.</Subtitle>
         </Hero>
       </Content>
+
+
+
+
+
+
       <DividerMiddle
-        bg="linear-gradient(to right, SlateBlue 50%, DeepSkyBlue 100%)"
         speed={-0.2}
         offset={1.1}
         factor={2}
+        className={'background-01'}
       />
+
+
+
+
+
+
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
           <Title>Projects</Title>
 
         </Inner>
       </Content>
+
+
+
+
+
+
+
       <Divider speed={0.1} offset={1} factor={2}>
         <UpDown>
           <SVG icon="bubble" width={3} left="80%" top="30%" />
@@ -188,17 +212,25 @@ const Index = () => (
         </UpDownWide>
 
       </Divider>
-      <Divider bg="red" speed={0.2} offset={3} />
+
+
+
+
+
+
+
+
+
+
+
+
+
       <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
-
-
         </UpDown>
         <UpDownWide>
           <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
-
-
         </UpDownWide>
         stuff here
       </Divider>
@@ -249,6 +281,11 @@ const Index = () => (
           <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
       </Divider>
+      <Divider
+        speed={0.2}
+        offset={5}
+        className={'foreground--coral'}
+      />
     </Parallax>
   </React.Fragment>
 );

@@ -1,0 +1,106 @@
+/*****************************
+******************************
+
+	1. Generic................  imports and resets
+	2. Elements...............  html, body, heading and paragraph, input, links, images
+	3. Objects................  containers, layout
+	4. Components.............  logo, navigation
+	5. Utilities..............  island of misfit classes
+
+******************************
+*****************************/
+
+
+
+
+
+/*****************************
+******************************
+
+	1. Generic................  imports and resets
+
+******************************
+*****************************/
+
+
+
+
+
+/*****************************
+******************************
+
+	2. Elements...............  html, body, core elements
+
+******************************
+*****************************/
+
+html, body {
+
+}
+
+h1,h2 {
+
+}
+
+h3,h4,h5,h6 {
+
+}
+
+p {
+
+}
+
+
+
+
+
+/*****************************
+******************************
+
+	3. Objects................  containers, layout
+
+******************************
+*****************************/
+
+
+
+
+
+/*****************************
+******************************
+
+4. Components..............   features blocks, forms, logo, navigation
+
+******************************
+*****************************/
+
+
+
+
+
+/*****************************
+******************************
+
+5. Utilities..............
+
+******************************
+*****************************/
+
+.background-01 {
+  background: url('../../images/background-01.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  opacity: .75;
+  background-size: contain !important;
+}
+
+.foreground--coral {
+  background: url('../../images/foreground-coral.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  background-size: cover !important;
+}
