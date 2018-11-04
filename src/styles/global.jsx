@@ -11,7 +11,9 @@ injectGlobal`
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: #161719;
+    background-color: #6cb2eb;
+    background: rgb(0,136,255);
+    background: linear-gradient(180deg, rgba(0,136,255,1) 0%, rgba(0,81,170,1) 100%);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

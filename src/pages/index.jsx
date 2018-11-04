@@ -128,17 +128,24 @@ const Footer = styled.footer`
 const Index = () => (
   <React.Fragment>
     <SEO />
+
     <Parallax pages={5}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
-          <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
-
-
+          <SVG icon="bubble" width={3} left="80%" top="30%" />
+          <SVG icon="bubble" width={4} left="40%" top="40%" />
+          <SVG icon="bubble" width={6} left="10%" top="10%" />
+          <SVG icon="bubble" width={3} left="50%" top="70%" />
+          <SVG icon="bubble" width={4} left="30%" top="20%" />
+          <SVG icon="bubble" width={3} left="10%" top="80%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
-
-
+          <SVG icon="bubble" width={3} left="40%" top="60%" />
+          <SVG icon="bubble" width={6} left="30%" top="70%" />
+          <SVG icon="bubble" width={4} left="20%" top="80%" />
+          <SVG icon="bubble" width={6} left="30%" top="90%" />
+          <SVG icon="bubble" width={6} left="79%" top="40%" />
+          <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
 
       </Divider>
@@ -151,7 +158,7 @@ const Index = () => (
         </Hero>
       </Content>
       <DividerMiddle
-        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+        bg="linear-gradient(to right, SlateBlue 50%, DeepSkyBlue 100%)"
         speed={-0.2}
         offset={1.1}
         factor={2}
@@ -159,52 +166,29 @@ const Index = () => (
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
           <Title>Projects</Title>
-          <ProjectsWrapper>
-            <ProjectCard
-              title="One"
-              link="#"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-            >
-              Description desc Description desc.
-            </ProjectCard>
-            <ProjectCard
-              title="Two"
-              link="#"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-            >
-              Description desc Description desc.
-            </ProjectCard>
-            <ProjectCard
-              title="Three"
-              link="#"
-              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-            >
-              Description desc Description desc.
-            </ProjectCard>
-            <ProjectCard
-              title="Four"
-              link="#"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-            >
-              Description desc Description desc.
-            </ProjectCard>
-          </ProjectsWrapper>
+
         </Inner>
       </Content>
       <Divider speed={0.1} offset={1} factor={2}>
         <UpDown>
-          <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
-
-
+          <SVG icon="bubble" width={3} left="80%" top="30%" />
+          <SVG icon="bubble" width={4} left="40%" top="40%" />
+          <SVG icon="bubble" width={6} left="10%" top="10%" />
+          <SVG icon="bubble" width={3} left="50%" top="70%" />
+          <SVG icon="bubble" width={4} left="30%" top="20%" />
+          <SVG icon="bubble" width={3} left="10%" top="80%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
-
-
+          <SVG icon="bubble" width={3} left="40%" top="60%" />
+          <SVG icon="bubble" width={6} left="30%" top="70%" />
+          <SVG icon="bubble" width={4} left="20%" top="80%" />
+          <SVG icon="bubble" width={6} left="30%" top="90%" />
+          <SVG icon="bubble" width={6} left="79%" top="40%" />
+          <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
-        stuff here
+
       </Divider>
-      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
+      <Divider bg="red" speed={0.2} offset={3} />
       <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
@@ -232,27 +216,12 @@ const Index = () => (
           </AboutDesc>
         </Inner>
       </Content>
-      <Divider fill="#202020" speed={0.2} offset={4}> // affects color of wave
-        <WaveWrapper>
-          <InnerWave>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
-              <path className={waveAnimation}>
-                <animate
-                  attributeName="d"
-                  values="M 0 100 Q 250 50 400 200 Q 550 350 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 200 150 400 200 Q 600 250 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z"
-                  repeatCount="indefinite"
-                  dur="30s"
-                />
-              </path>
-            </svg>
-          </InnerWave>
-        </WaveWrapper>
-      </Divider>
+
       <Content speed={0.4} offset={4}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
+            Say <a href="mailto:matt@trice.design">Hi</a> or find me on other platforms:{' '}
             <a href="https://dribbble.com/trice">Dribbble</a> &{' '}
             <a href="https://www.instagram.com/trice.design/">Instagram</a>
           </ContactText>
@@ -264,16 +233,21 @@ const Index = () => (
       </Content>
       <Divider speed={0.1} offset={4}>
         <UpDown>
-          <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
-
-
+          <SVG icon="bubble" width={3} left="80%" top="30%" />
+          <SVG icon="bubble" width={4} left="40%" top="40%" />
+          <SVG icon="bubble" width={6} left="10%" top="10%" />
+          <SVG icon="bubble" width={3} left="50%" top="70%" />
+          <SVG icon="bubble" width={4} left="30%" top="20%" />
+          <SVG icon="bubble" width={3} left="10%" top="80%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
-
-
+          <SVG icon="bubble" width={3} left="40%" top="60%" />
+          <SVG icon="bubble" width={6} left="30%" top="70%" />
+          <SVG icon="bubble" width={4} left="20%" top="80%" />
+          <SVG icon="bubble" width={6} left="30%" top="90%" />
+          <SVG icon="bubble" width={6} left="79%" top="40%" />
+          <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
-        stuff here
       </Divider>
     </Parallax>
   </React.Fragment>
