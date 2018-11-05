@@ -63,3 +63,5 @@ tailwind.custom.css
 src/\.DS_Store
 
 src/assets/css/\.DS_Store
+
+src/images/\.DS_Store

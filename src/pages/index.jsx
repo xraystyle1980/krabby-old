@@ -4,6 +4,7 @@ import styled from 'react-emotion';
 import { Parallax, ParallaxLayer } from 'react-spring';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
+import 'typeface-oswald';
 
 
 import '../assets/css/krabby.css';
@@ -46,7 +47,7 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
+  ${tw('text-5xl lg:text-6xl font-heading text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
@@ -134,7 +135,9 @@ const Index = () => (
   <React.Fragment>
     <SEO />
 
-    <Parallax pages={6}>
+    <Parallax pages={5}>
+
+
       <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="bubble" width={3} left="80%" top="30%" />
@@ -152,7 +155,6 @@ const Index = () => (
           <SVG icon="bubble" width={6} left="79%" top="40%" />
           <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
-
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
@@ -164,35 +166,12 @@ const Index = () => (
       </Content>
 
 
-
-
-
-
       <DividerMiddle
         speed={-0.2}
-        offset={1.1}
+        offset={1}
         factor={2}
         className={'background-01'}
       />
-
-
-
-
-
-
-      <Content speed={0.4} offset={1.2} factor={2}>
-        <Inner>
-          <Title>Projects</Title>
-
-        </Inner>
-      </Content>
-
-
-
-
-
-
-
       <Divider speed={0.1} offset={1} factor={2}>
         <UpDown>
           <SVG icon="bubble" width={3} left="80%" top="30%" />
@@ -210,31 +189,10 @@ const Index = () => (
           <SVG icon="bubble" width={6} left="79%" top="40%" />
           <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
-
       </Divider>
 
 
-
-
-
-
-
-
-
-
-
-
-
-      <Divider speed={0.1} offset={3}>
-        <UpDown>
-          <SVG icon="bubble" width={8} stroke={colors.red} left="60%" top="70%" />
-        </UpDown>
-        <UpDownWide>
-          <SVG icon="bubble" width={48} stroke={colors.red} left="20%" top="30%" />
-        </UpDownWide>
-        stuff here
-      </Divider>
-      <Content speed={0.4} offset={3}>
+      <Content speed={0.4} offset={2}>
         <Inner>
           <Title>About</Title>
           <AboutHero>
@@ -249,7 +207,8 @@ const Index = () => (
         </Inner>
       </Content>
 
-      <Content speed={0.4} offset={4}>
+
+      <Content speed={0.4} offset={3}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
@@ -263,7 +222,7 @@ const Index = () => (
           <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
         </Footer>
       </Content>
-      <Divider speed={0.1} offset={4}>
+      <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="bubble" width={3} left="80%" top="30%" />
           <SVG icon="bubble" width={4} left="40%" top="40%" />
@@ -281,11 +240,28 @@ const Index = () => (
           <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
       </Divider>
-      <Divider
-        speed={0.2}
-        offset={5}
-        className={'foreground--coral'}
-      />
+
+
+      <Divider speed={0.2} offset={4} className={'foreground--coral'}>
+        <UpDown>
+          <SVG icon="bubble" width={3} left="80%" top="30%" />
+          <SVG icon="bubble" width={4} left="40%" top="40%" />
+          <SVG icon="bubble" width={6} left="10%" top="10%" />
+          <SVG icon="bubble" width={3} left="50%" top="70%" />
+          <SVG icon="bubble" width={4} left="30%" top="20%" />
+          <SVG icon="bubble" width={3} left="10%" top="80%" />
+        </UpDown>
+        <UpDownWide>
+          <SVG icon="bubble" width={3} left="40%" top="60%" />
+          <SVG icon="bubble" width={6} left="30%" top="70%" />
+          <SVG icon="bubble" width={4} left="20%" top="80%" />
+          <SVG icon="bubble" width={6} left="30%" top="90%" />
+          <SVG icon="bubble" width={6} left="79%" top="40%" />
+          <SVG icon="bubble" width={4} left="60%" top="60%" />
+        </UpDownWide>
+      </Divider>
+
+
     </Parallax>
   </React.Fragment>
 );

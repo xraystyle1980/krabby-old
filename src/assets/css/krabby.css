@@ -90,7 +90,6 @@ p {
   background: url('../../images/background-01.png');
   background-position: bottom;
   background-repeat: no-repeat;
-  height: 1000px;
   width: 100%;
   opacity: .75;
   background-size: contain !important;
