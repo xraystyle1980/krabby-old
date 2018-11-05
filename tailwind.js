@@ -224,6 +224,7 @@ module.exports = {
     mono: ['Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
   },
 
+
   /*
   |-----------------------------------------------------------------------------
   | Text sizes                         https://tailwindcss.com/docs/text-sizing

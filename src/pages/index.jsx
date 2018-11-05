@@ -2,10 +2,10 @@
 import React from 'react';
 import styled from 'react-emotion';
 import { Parallax, ParallaxLayer } from 'react-spring';
+
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
 import 'typeface-oswald';
-
 
 import '../assets/css/krabby.css';
 
@@ -18,9 +18,12 @@ import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
+import { fonts } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.png';
 import '../styles/global';
+
+
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -47,8 +50,9 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-heading text-white mb-6 tracking-wide')};
+  ${tw('text-5xl lg:text-6xl text-white mb-6 tracking-tight')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+  font-family: Oswald;
 `;
 
 const Title = styled.h1`
@@ -68,7 +72,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
+  ${tw('text-2xl lg:text-3xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
