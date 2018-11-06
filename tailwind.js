@@ -256,6 +256,7 @@ module.exports = {
     '5xl': '3rem', // 48px
     '6xl': '5rem',
     '7xl': '8rem',
+    '9xl': '12rem',
   },
 
   /*

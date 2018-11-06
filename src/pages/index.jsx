@@ -20,7 +20,11 @@ import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import { fonts } from '../../tailwind';
 import triangle from '../images/triangle.svg';
+import arrow from '../images/arrow.svg';
 import avatar from '../images/avatar.png';
+import dribbble from '../images/icon-dribbble.svg';
+import instagram from '../images/icon-instagram.svg';
+import linkedin from '../images/icon-linkedin.svg';
 import '../styles/global';
 
 
@@ -50,14 +54,15 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl text-white mb-6 tracking-tight')};
-  text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+  ${tw('text-white mb-6 tracking-tight')};
   font-family: Oswald;
+  font-size: 6rem;
 `;
 
 const Title = styled.h1`
-  ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block')};
+  ${tw('mb-8 tracking-wide relative inline-block')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-family: Oswald;
   &:before {
     content: '';
     width: 40px;
@@ -74,6 +79,30 @@ const Title = styled.h1`
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-3xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  font-family: Open Sans;
+`;
+
+const HeroTextLink = styled.a`
+  ${tw('text-2xl lg:text-3xl font-sans text-white mt-8 xxl:w-3/4')};
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  font-family: Open Sans;
+  display: inline-flex;
+  &:after {
+    content: '';
+    width: 24px;
+    height: 20px;
+    background: url(${arrow});
+    position: relative;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    left: 6px;
+    top: 12px;
+    margin-left: 8px;
+  }
+`;
+
+const SocialIcons = styled.ul`
+  display: inline;
 `;
 
 const ProjectsWrapper = styled.div`
@@ -163,9 +192,24 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Howdy, <br /> I'm Matt Trice.
+            My name is Matt Trice.
           </BigTitle>
-          <Subtitle>Online website portfolio for UX app design full time system for design.</Subtitle>
+          <Subtitle>I am an Atlanta based UX, prototype, web designer, front end development, from start to finish to implementation full life cycle of the design.</Subtitle>
+          <HeroTextLink>
+            <a href="#" className={'text__link--yellow'}>Let's make something cool</a>
+          </HeroTextLink>
+          <ul className="social-list">
+            <li className="social-links--white"><a href="https://dribbble.com/trice" title="Follow me on Dribbble">
+              <img src={dribbble} alt="Dribbble" /></a>
+            </li>
+            <li className="social-links--white"><a href="https://www.linkedin.com/in/matt-trice-5053b325/" title="Serious as fuck">
+              <img src={linkedin} alt="LINKED FUCKING IN" /></a>
+            </li>
+            <li className="social-links--white"><a href="https://www.instagram.com/trice.design/" title="Follow me on Instagram">
+              <img src={instagram} alt="Instagram" /></a>
+            </li>
+          </ul>
+
         </Hero>
       </Content>
 
