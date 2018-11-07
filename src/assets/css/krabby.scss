@@ -108,8 +108,6 @@ a {
   background-size: cover !important;
 }
 
-
-
 .text__link--yellow {
   color: #FFE000;
   text-decoration: none;
@@ -120,12 +118,12 @@ a {
   text-decoration: none;
 }
 
-.social-links--white {
-  display: inline;
-  list-style-type: none;
-}
+.social-icons {
+  padding-left: 0 !important;
 
-.social-list {
-  display: inline;
-  list-style-type: none;
+  li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 2em 0 0;
+  }
 }

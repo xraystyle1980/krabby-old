@@ -7,7 +7,7 @@ import 'typeface-cantata-one';
 import 'typeface-open-sans';
 import 'typeface-oswald';
 
-import '../assets/css/krabby.css';
+import '../assets/css/krabby.scss';
 
 
 
@@ -83,10 +83,11 @@ const Subtitle = styled.p`
 `;
 
 const HeroTextLink = styled.a`
-  ${tw('text-2xl lg:text-3xl font-sans text-white mt-8 xxl:w-3/4')};
+  ${tw('text-2xl lg:text-3xl font-sans text-white mt-8 xxl:w-full')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   font-family: Open Sans;
   display: inline-flex;
+  width: 100%;
   &:after {
     content: '';
     width: 24px;
@@ -198,18 +199,17 @@ const Index = () => (
           <HeroTextLink>
             <a href="#" className={'text__link--yellow'}>Let's make something cool</a>
           </HeroTextLink>
-          <ul className="social-list">
-            <li className="social-links--white"><a href="https://dribbble.com/trice" title="Follow me on Dribbble">
+          <ul className="social-icons">
+            <li><a href="https://dribbble.com/trice" title="Follow me on Dribbble">
               <img src={dribbble} alt="Dribbble" /></a>
             </li>
-            <li className="social-links--white"><a href="https://www.linkedin.com/in/matt-trice-5053b325/" title="Serious as fuck">
+            <li><a href="https://www.linkedin.com/in/matt-trice-5053b325/" title="Serious as fuck">
               <img src={linkedin} alt="LINKED FUCKING IN" /></a>
             </li>
-            <li className="social-links--white"><a href="https://www.instagram.com/trice.design/" title="Follow me on Instagram">
+            <li><a href="https://www.instagram.com/trice.design/" title="Follow me on Instagram">
               <img src={instagram} alt="Instagram" /></a>
             </li>
           </ul>
-
         </Hero>
       </Content>
 
