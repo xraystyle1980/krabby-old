@@ -25,6 +25,7 @@ import avatar from '../images/avatar.png';
 import dribbble from '../images/icon-dribbble.svg';
 import instagram from '../images/icon-instagram.svg';
 import linkedin from '../images/icon-linkedin.svg';
+import logotd from '../images/logo-td.svg';
 import '../styles/global';
 
 
@@ -36,6 +37,15 @@ const Divider = styled(ParallaxLayer)`
     fill: ${props => props.fill};
   }
   clip-path: ${props => props.clipPath};
+`;
+
+const Container = styled.div`
+  ${tw('p-1 md:p-12 lg:p-24 justify-center items-center flex z-50')};
+`;
+
+const Navigation = styled.div`
+  ${tw('w-full')};
+  padding-bottom:0;
 `;
 
 const DividerMiddle = styled(Divider)`
@@ -190,6 +200,21 @@ const Index = () => (
           <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
       </Divider>
+      <Container>
+        <Navigation>
+          <ul className="nav__main">
+            <li>
+              <img src={logotd} className="logo__main" alt="trice.design" />
+            </li>
+            <li>
+              <a href="about" title="">ABOUT</a>
+            </li>
+            <li>
+              <a href="contact" title="">CONTACT</a>
+            </li>
+          </ul>
+        </Navigation>
+      </Container>
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>

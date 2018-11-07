@@ -118,6 +118,20 @@ a {
   text-decoration: none;
 }
 
+.nav__main {
+  padding-left: 0 !important;
+
+  li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 2em 0 0;
+  }
+}
+
+.logo__main {
+  max-width: 200px
+}
+
 .social-icons {
   padding-left: 0 !important;
 
