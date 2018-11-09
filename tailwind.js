@@ -168,11 +168,11 @@ module.exports = {
   */
 
   screens: {
-    sm: '400px',
-    md: '600px',
-    lg: '900px',
-    xl: '1200px',
-    xxl: '1600px',
+    'xs': {'min': '0px', 'max': '575px'},
+    'sm': {'min': '576px', 'max': '767px'},
+    'md': {'min': '768px', 'max': '991px'},
+    'lg': {'min': '992px', 'max': '1199px'},
+    'xl': {'min': '1200px'},
   },
 
   /*
@@ -322,6 +322,7 @@ module.exports = {
     wide: '0.05em',
   },
 
+
   /*
   |-----------------------------------------------------------------------------
   | Text colors                         https://tailwindcss.com/docs/text-color
@@ -467,6 +468,8 @@ module.exports = {
     screen: '100vw',
   },
 
+
+
   /*
   |-----------------------------------------------------------------------------
   | Height                                  https://tailwindcss.com/docs/height
@@ -610,7 +613,7 @@ module.exports = {
     '2': '0.5rem',
     '3': '0.75rem',
     '4': '1rem',
-    '6': '1.5rem',
+    '6': '1.325rem',
     '8': '2rem',
     '12': '3rem',
     '16': '4rem',
@@ -741,6 +744,79 @@ module.exports = {
 
   /*
   |-----------------------------------------------------------------------------
+  | Modules                  https://tailwindcss.com/docs/configuration#modules
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you control which modules are generated and what variants are
+  | generated for each of those modules.
+  |
+  | Currently supported variants:
+  |   - responsive
+  |   - hover
+  |   - focus
+  |   - focus-within
+  |   - active
+  |   - group-hover
+  |
+  | To disable a module completely, use `false` instead of an array.
+  |
+  */
+
+  modules: {
+    appearance: ['responsive'],
+    backgroundAttachment: ['responsive'],
+    backgroundColors: ['responsive', 'hover', 'focus'],
+    backgroundPosition: ['responsive'],
+    backgroundRepeat: ['responsive'],
+    backgroundSize: ['responsive'],
+    borderCollapse: [],
+    borderColors: ['responsive', 'hover', 'focus'],
+    borderRadius: ['responsive'],
+    borderStyle: ['responsive'],
+    borderWidths: ['responsive'],
+    cursor: ['responsive'],
+    display: ['responsive'],
+    flexbox: ['responsive'],
+    float: ['responsive'],
+    fonts: ['responsive'],
+    fontWeights: ['responsive', 'hover', 'focus'],
+    height: ['responsive'],
+    leading: ['responsive'],
+    lists: ['responsive'],
+    margin: ['responsive'],
+    maxHeight: ['responsive'],
+    maxWidth: ['responsive'],
+    minHeight: ['responsive'],
+    minWidth: ['responsive'],
+    negativeMargin: ['responsive'],
+    objectFit: false,
+    objectPosition: false,
+    opacity: ['responsive'],
+    outline: ['focus'],
+    overflow: ['responsive'],
+    padding: ['responsive'],
+    pointerEvents: ['responsive'],
+    position: ['responsive'],
+    resize: ['responsive'],
+    shadows: ['responsive', 'hover', 'focus'],
+    svgFill: [],
+    svgStroke: [],
+    tableLayout: ['responsive'],
+    textAlign: ['responsive'],
+    textColors: ['responsive', 'hover', 'focus'],
+    textSizes: ['responsive'],
+    textStyle: ['responsive', 'hover', 'focus'],
+    tracking: ['responsive'],
+    userSelect: ['responsive'],
+    verticalAlign: ['responsive'],
+    visibility: ['responsive'],
+    whitespace: ['responsive'],
+    width: ['responsive'],
+    zIndex: ['responsive'],
+  },
+
+  /*
+  |-----------------------------------------------------------------------------
   | Options                  https://tailwindcss.com/docs/configuration#options
   |-----------------------------------------------------------------------------
   |
@@ -749,8 +825,10 @@ module.exports = {
   |
   */
 
+
   options: {
     prefix: '',
     important: false,
   },
+
 };

@@ -119,17 +119,23 @@ a {
 }
 
 .nav__main {
-  padding-left: 0 !important;
+  // padding-left: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   li {
-    display: inline;
+    // flex: 0 0 auto;
     list-style-type: none;
     padding: 0 2em 0 0;
+  }
+  li:nth-child(1) {
+  	/*margin-right: auto; applied only to the right*/
   }
 }
 
 .logo__main {
-  max-width: 200px
+  min-width: 200px
 }
 
 .social-icons {
