@@ -19,6 +19,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import { fonts } from '../../tailwind';
+import { screens } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import arrow from '../images/arrow.svg';
 import avatar from '../images/avatar.png';
@@ -43,6 +44,11 @@ const Container = styled.div`
   ${tw('p-1 md:p-12 lg:p-24 justify-center items-center flex z-50')};
 `;
 
+const HeaderContainer = styled.div`
+  ${tw('justify-center items-center flex z-50')};
+  padding: 1rem 4rem 0 4rem;
+`;
+
 const Navigation = styled.div`
   ${tw('w-full')};
   padding-bottom:0;
@@ -51,12 +57,12 @@ const Navigation = styled.div`
 const DividerMiddle = styled(Divider)`
 `;
 
-const Content = styled(ParallaxLayer)`
-  ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
+Content = styled(ParallaxLayer)`
+  ${tw('p-4 justify-center items-top flex z-50')};
 `;
 
 const Hero = styled.div`
-  ${tw('w-full xl:w-2/3')};
+  ${tw('w-full')};
 `;
 
 const Inner = styled.div`
@@ -66,7 +72,7 @@ const Inner = styled.div`
 const BigTitle = styled.h1`
   ${tw('text-white mb-6 tracking-tight')};
   font-family: Oswald;
-  font-size: 6rem;
+
 `;
 
 const Title = styled.h1`
@@ -113,7 +119,7 @@ const HeroTextLink = styled.a`
 `;
 
 const SocialIcons = styled.ul`
-  display: inline;
+  display: none;
 `;
 
 const ProjectsWrapper = styled.div`
@@ -181,7 +187,7 @@ const Index = () => (
 
     <Parallax pages={5}>
 
-    <Container>
+    <HeaderContainer>
       <Navigation>
         <ul className="nav__main">
           <li>
@@ -205,7 +211,8 @@ const Index = () => (
           </li>
         </ul>
       </Navigation>
-    </Container>
+    </HeaderContainer>
+
       <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="bubble" width={3} left="80%" top="30%" />
@@ -224,6 +231,7 @@ const Index = () => (
           <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
       </Divider>
+
 
       <Content speed={0.4} offset={0}>
         <Hero>
