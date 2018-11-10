@@ -181,7 +181,31 @@ const Index = () => (
 
     <Parallax pages={5}>
 
-
+    <Container>
+      <Navigation>
+        <ul className="nav__main">
+          <li>
+            <img src={logotd} className="logo__main" alt="trice.design" />
+          </li>
+          <li className="contact">
+            <a href="contact" title="">Contact</a>
+          </li>
+          <li>
+            <ul className="social-icons">
+              <li><a href="https://dribbble.com/trice" title="Follow me on Dribbble">
+                <img src={dribbble} className="" alt="Dribbble" /></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/matt-trice-5053b325/" title="Serious as fuck">
+                <img src={linkedin} className="" alt="LINKED FUCKING IN" /></a>
+              </li>
+              <li><a href="https://www.instagram.com/trice.design/" title="Follow me on Instagram">
+                <img src={instagram} className="" alt="Instagram" /></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </Navigation>
+    </Container>
       <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="bubble" width={3} left="80%" top="30%" />
@@ -200,21 +224,7 @@ const Index = () => (
           <SVG icon="bubble" width={4} left="60%" top="60%" />
         </UpDownWide>
       </Divider>
-      <Container>
-        <Navigation>
-          <ul className="nav__main">
-            <li>
-              <img src={logotd} className="logo__main" alt="trice.design" />
-            </li>
-            <li>
-              <a href="about" title="">ABOUT</a>
-            </li>
-            <li>
-              <a href="contact" title="">CONTACT</a>
-            </li>
-          </ul>
-        </Navigation>
-      </Container>
+
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
@@ -224,17 +234,7 @@ const Index = () => (
           <HeroTextLink>
             <a href="#" className={'text__link--yellow'}>Let's make something cool</a>
           </HeroTextLink>
-          <ul className="social-icons">
-            <li><a href="https://dribbble.com/trice" title="Follow me on Dribbble">
-              <img src={dribbble} alt="Dribbble" /></a>
-            </li>
-            <li><a href="https://www.linkedin.com/in/matt-trice-5053b325/" title="Serious as fuck">
-              <img src={linkedin} alt="LINKED FUCKING IN" /></a>
-            </li>
-            <li><a href="https://www.instagram.com/trice.design/" title="Follow me on Instagram">
-              <img src={instagram} alt="Instagram" /></a>
-            </li>
-          </ul>
+
         </Hero>
       </Content>
 

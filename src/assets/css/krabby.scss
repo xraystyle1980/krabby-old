@@ -119,25 +119,62 @@ a {
 }
 
 .nav__main {
-  padding-left: 0 !important;
+  // padding-left: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  @media (min-width: 0px) and (max-width: 767px) {
+    justify-content: center;
+  }
 
+  li {
+    // flex: 0 0 auto;
+    list-style-type: none;
+    padding: 0 2em 0 0;
+  }
+  li:nth-child(1) { /*logo*/
+  	margin-right: auto; /*applied only to the right*/
+    @media (min-width: 0px) and (max-width: 767px) {
+      margin-right: inherit;
+    }
+  }
+  li.contact {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 2em;
+    @media (min-width: 0px) and (max-width: 767px) {
+      display: none;
+    }
+  }
+  li.contact a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    position: relative;
+    top: 2px;
+  }
+  // li.contact a::before {
+  //   content: url('../../images/icon-message-in-a-bottle.svg');
+  //   padding:1em;
+  //   position: relative;
+  //   top: 8px;
+  // }
+}
+
+.logo__main {
+  min-width: 200px
+}
+
+.social-icons {
+  padding-left: 0 !important;
   li {
     display: inline;
     list-style-type: none;
     padding: 0 2em 0 0;
   }
-}
-
-.logo__main {
-  max-width: 200px
-}
-
-.social-icons {
-  padding-left: 0 !important;
-
-  li {
-    display: inline;
-    list-style-type: none;
-    padding: 0 2em 0 0;
+  img {
+    width: 24px;
   }
 }
